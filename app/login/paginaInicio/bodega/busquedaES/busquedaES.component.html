@@ -1,0 +1,55 @@
+
+  <div class="row">
+  <div class="col-md-1 col-sm-1 col-lg-1" style="background: #0085A0">
+  </div>
+  <div class="col-md-3 col-sm-3 col-lg-3" style="background: #0085A0">
+    <img style="width:250px; height:150px;" src="https://preview.ibb.co/cbhajJ/logo.png" alt="logo">
+  </div>
+  <div class="col-md-1 col-sm-1 col-lg-1" style="background: #0085A0">
+  </div>
+  <div class="col-md-7 col-sm-7 col-lg-7" style="background: #0085A0">
+    <div class="contratacion">
+      <h1 style="color:white; margin-top:50px">BODEGA</h1>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 col-lg-12" style="background: #FFFFF">
+    <br>
+  </div>
+</div>
+<h1>Entradas y Salidas</h1>
+<br><br>
+<table class="Table table dark ">
+      <thead>
+        <tr>
+          <th> Nombre </th>
+          <th>Cantidad</th>
+          <th>Clasificacion</th>
+          <th>Encargado</th>
+          <th>Area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entradas of listaEntradas">
+          <td> {{entradas.Elemento_Id}}</td>
+          <td> {{entradas.Cantidad}}</td>
+          <td> {{entradas.Clasificacion}}</td>
+          <td> {{entradas.Encargado}}</td>
+          <td> {{entradas.Areas_Id}}</td>
+        </tr>
+      </tbody>
+</table>
+<br><br>
+<div class="row">
+     <div class="col-md-8 col-sm-8 col-lg-8">
+    </div>
+    <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="atras">
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink="../" style="font-size: small"> Atras</button>
+        
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="imprimir">
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink="../" style="font-size: small"> Generar PDF</button>
+      </div>
+    </div>

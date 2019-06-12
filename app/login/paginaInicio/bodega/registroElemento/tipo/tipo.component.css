@@ -1,0 +1,25 @@
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    width: 150px;
+    text-align: center;
+}
+h1{
+  text-align: center;
+}
+label{
+  font-weight: bold;
+}
+.contratacion {
+text-align: left;
+}
+button{
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  font-size: medium;
+}

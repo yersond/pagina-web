@@ -1,0 +1,122 @@
+<div class="row">
+  <div class="col-md-1 col-sm-1 col-lg-1" style="background: #0085A0">
+  </div>
+  <div class="col-md-3 col-sm-3 col-lg-3" style="background: #0085A0">
+    <img style="width:250px; height:150px;" src="https://preview.ibb.co/cbhajJ/logo.png" alt="logo">
+  </div>
+  <div class="col-md-1 col-sm-1 col-lg-1" style="background: #0085A0">
+  </div>
+  <div class="col-md-7 col-sm-7 col-lg-7" style="background: #0085A0">
+    <div class="contratacion">
+      <h1 style="color:white; margin-top:50px">BODEGA</h1>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 col-lg-12" style="background: #FFFFF">
+    <br>
+  </div>
+</div>
+<button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink=""> Cerrar sesion</button>
+<h1>Entradas Y Salidas</h1>
+<br>
+<div class="row">
+    <div class="col-md-2 col-sm-2 col-lg-2">
+    </div>
+		<div class="col-md-3 col-sm-3 col-lg-3">
+
+			<div class="fecha">
+				<p><label>Fecha </label></p>
+				<p><input type="date" [(ngModel)]="datosEntrada.Fecha"  placeholder="Fecha"></p>
+				<br>
+			</div>
+    </div>
+		<div class="col-md-3 col-sm-3 col-lg-3">
+			<div class="enfoque">
+				<p><label> Enfoque </label></p>
+				<input type="text" [(ngModel)]="datosEntrada.Enfoque" class="form-control" id="enfoque" placeholder="Enfoque">
+				<br>
+			</div>
+		</div>
+
+		<br>
+		<div class="col-md-3 col-sm-3 col-lg-3">
+			<div class="codigo">
+				<label>Codigo</label>
+				<br>
+			<input type="text" [(ngModel)]="datosEntrada.Elemento_Id" class="form-control" id="codigo" placeholder="Codigo del elemento" >
+				<br>
+			</div>
+		</div>
+	</div>
+  <br> <br>
+  <div class="row">
+    <div class="col-md-1 col-sm-1 col-lg-1">
+    </div>
+		<div class="col-md-2 col-sm-2 col-lg-2">
+
+			<div class="cantidad">
+				<label>Cantidad </label>
+				<input type="integer" [(ngModel)]="datosEntrada.Cantidad" class="form-control" id="cantidad" placeholder="Cantidad">
+				<br>
+			</div>
+    </div>
+    <br>
+    <div class="col-md-1 col-sm-1 col-lg-1">
+    </div>
+		<div class="col-md-2 col-sm-2 col-lg-2">
+			<div class="encargado">
+				<label> Encargado </label>
+				<br>
+				<input type="text" [(ngModel)]="datosEntrada.Encargado" class="form-control" id="encargado" placeholder="¿Quien ingresa el elemento?">
+			</div>
+		</div>
+
+		<br> <br>
+    
+    <div class="col-md-2 col-sm-2 col-lg-2">
+	<div class="clasificacion">
+				<label>Clasificacion </label>
+				<input type="text" [(ngModel)]="datosEntrada.Clasificacion" class="form-control" id="clasificacion" placeholder="Clasificacion">
+				<br>
+	</div>
+</div>
+<div class="col-md-1 col-sm-1 col-lg-1">
+    </div>
+    <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="area">
+				<label> Areas </label>
+				<br>
+				<input type="number" [(ngModel)]="datosEntrada.Areas_Id" class="form-control" id="Areas" placeholder="Areas">
+				<br>
+			</div>
+		</div>
+  </div>
+  <br> <br>
+   <div class="row">
+     <div class="col-md-1 col-sm-1 col-lg-1">
+    </div>
+    <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="busqueda">
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink="busquedaES"> Buscar E/S</button>
+      </div>
+    </div>
+      <div class="col-md-5 col-sm-5 col-lg-5">
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="registroElemento">
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink="registroElemento" style="font-size: small"> Registro Elemento</button>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="Guardar">
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" (click)="guardarEntrada()" id="enviar"> Guardar</button>
+      </div>
+    </div>
+   </div>
+  
+   
+
+
+
+
+

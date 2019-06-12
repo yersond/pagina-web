@@ -1,0 +1,42 @@
+p {
+  font-family: Lato;
+}
+nav{
+		background: #0085A0;
+		font-family: niu2;
+		font-weight: lighter;
+    font-weight: bold;
+    height: 100px;
+ 
+   
+	}
+  .menu {
+		text-align: center;
+		margin: 0
+    
+
+	}
+	.menu li{
+		display: inline-block;
+	}
+	.menu a{
+		padding: 30px;
+		color: white;
+		text-decoration: none;
+		display: block;
+    
+	}
+	.menu a:hover{
+		background: #0b9ebc
+}
+.logo{
+	background: #0085A0;
+	overflow: hidden;
+	text-align: center;
+	padding: 5px;
+  height: 150px;
+ 
+
+
+}
+

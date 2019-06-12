@@ -1,0 +1,15 @@
+h1, th{
+  text-align: center;
+}
+.contratacion {
+text-align: left;
+}
+button{
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  font-size: medium;
+}
+td{
+  text-align: center;
+}

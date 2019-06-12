@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-md-1 col-sm-1 col-lg-1" style="background: #0085A0">
+  </div>
+  <div class="col-md-3 col-sm-3 col-lg-3" style="background: #0085A0">
+    <img style="width:250px; height:150px;" src="https://preview.ibb.co/cbhajJ/logo.png" alt="logo">
+  </div>
+  <div class="col-md-1 col-sm-1 col-lg-1" style="background: #0085A0">
+  </div>
+  <div class="col-md-7 col-sm-7 col-lg-7" style="background: #0085A0">
+    <div class="contratacion">
+      <h1 style="color:white; margin-top:50px">BODEGA</h1>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 col-lg-12" style="background: #FFFFF">
+    <br>
+  </div>
+</div>
+<h1>Lista de Elementos</h1>
+<table class="Table table dark ">
+      <thead>
+        <tr>
+          <th> Nombre </th>
+          <th>Tipo</th>
+          <th>Clasificacion</th>
+          <th>Cantidad</th>
+        </tr>
+      </thead>
+          <tbody>
+        <tr *ngFor="let elemento of listaElementos">
+          <td> {{elemento.nombre}}</td>
+          <td> {{elemento.TiposElementos_Id}}</td>
+          <td> {{elemento.Clasificacion}}</td>
+          <td> {{elemento.Cantidad}}</td>
+        </tr>
+      </tbody>
+
+</table>
+<div class="atras">
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink="../" > Atras</button>
+      </div>
+   <br><br>
+     <div class="row">
+    <div class="col-md-10 col-sm-10 col-lg-10">
+    </div>
+      <div class="col-md-2 col-sm-2 col-lg-2">
+      <div class="registroElemento">
+
+        <button type="button" class="btn btn-outline-info btn-lg btn-block" routerLink="" > Informe </button>
+      </div>
+    </div>
